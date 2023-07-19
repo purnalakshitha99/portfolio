@@ -1108,3 +1108,22 @@ span {
     left: -4rem;
   }
 }
+
+@media (max-width: 768px) {
+  .home .profession-box .profession:nth-child(3) {
+    top: 45rem;
+    bottom: 21rem;
+    left: 25rem;
+    right: 45rem;
+  }
+
+  .home .profession-box .profession:nth-child(0) {
+    left: -4rem;
+  }
+
+  .home .profession-box .profession:nth-child(1) {
+    bottom: 35rem;
+    left: 32rem;
+    right: 17rem;
+  }
+}
