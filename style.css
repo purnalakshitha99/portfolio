@@ -1074,3 +1074,32 @@ span {
     transform: rotate(90deg) translate(-174px, -433px);
   }
 }
+
+@media (max-width: 380px) {
+  .home .home-content h1 {
+    margin-left: 3rem;
+  }
+
+  .home .profession h3 {
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .home .profession-box .profession:nth-child(3) {
+    left: 7rem;
+    right: 16rem;
+    bottom: 24rem;
+    top: 50rem;
+  }
+
+  .home .profession-box .profession:nth-child(1) {
+    left: 7rem;
+    right: 4rem;
+    bottom: 39rem;
+  }
+
+  .home .profession-box .profession:nth-child(3) {
+    transform: rotate(90deg) translate(-174px, -433px);
+  }
+}
