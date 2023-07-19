@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purna | Portfolio</title>
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- <box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- smptp email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="bx-bx-moon" id="darkMood-icon">
+        <i class="bx bx-moon"></i>
+      </div>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Purna Lakshitha</h1>
+        <p>
+          I'm Purna Lakshitha, an undergraduate student pursuing a BSc in
+          Information Technology at the Sri Lanka Institute of Information
+          Technology.
+        </p>
+
+        <div class="social-media">
+          <a href="https://web.facebook.com/purna.roxz"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://github.com/purnalakshitha99"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://twitter.com/lakshitha_purna"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/purna_lakshitha/"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/purna-lakshitha-063714218/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+
+        <a href="./CV/purnaCV.pdf" download class="btn">Download CV</a>
+      </div>
+
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Developepment</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class="bx bx-mobile"></i>
+            <h3>Mobile Application</h3>
+          </div>
+          <!-- <div class="profession" style="--i: 2">
+            <i class="bx bxs-photo-album"></i>
+            <h3>Lightroom</h3>
+          </div> -->
+          <div class="profession" style="--i: 3">
+            <i class="bx bxs-color"></i>
+            <h3>Ui / Ux</h3>
+          </div>
+          <div class="circle"></div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <div class="home-img">
+        <img src="images/profile.png" alt="profile" />
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <!-- <div class="about-img"> -->
+      <img src="images/blue1.png" alt="aboutimage" />
+      <!-- </div> -->
+      <!-- <div class="about-img"><img src="images/about.png" alt="aboutimage"</div> -->
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi I'm Purna Full-Stack | Mobile application Developer</h3>
+        <p></p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- eduction part design -->
+    <section class="ediu" id="ediu">
+      <div class="ediu-container">
+        <h2 class="heading">My <span>Education</span></h2>
+
+        <div class="ediu-wrapper">
+          <div class="ediu-box mySwiper">
+            <div class="ediu-content swiper-wrapper">
+              <div class="ediu-slide swiper-slide">
+                <img src="images/icc.png" alt="iccimg" />
+                <h3>Ibbagamuwa Central</h3>
+                <p>
+                  Passed General Certificate of Education Advanced Level Exam -
+                  ( Engineering Technology)
+                </p>
+              </div>
+
+              <div class="ediu-slide swiper-slide">
+                <img src="images/sliit.png" alt="iccimg" />
+                <h3>SLIIT | Sri Lanka Institute of Information Technology</h3>
+                <p>
+                  undergraduate student pursuing a BSc in Information Technology
+                  .
+                </p>
+              </div>
+
+              <!-- <div class="ediu-slide swiper-slide">
+                <img src="images/icc.png" alt="iccimg" />
+                <h3>Ibbagamuwa Central</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quisquam, pariatur eaque voluptate exercitationem quis vitae
+                  quas modi optio at .
+                </p>
+              </div> -->
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h1>Front-End Development</h1>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-code-block"></i>
+          <h1>Back-End Development</h1>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-mobile"></i>
+          <h1>Mobile app Development</h1>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-edit"></i>
+          <h1>Content Writer</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section desing -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="projects-container">
+        <div class="projects-box">
+          <img src="images/event.png" alt="eventimg" />
+          <div class="projects-layer">
+            <h4>Event Management</h4>
+            <p>
+              This is a Event management system , using MVC architecture , java
+              servlet #HTML5 #Boostrap5!
+            </p>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="images/foodapp.png" alt="foodapp" />
+          <div class="projects-layer">
+            <h4>Meal Mate</h4>
+            <p>
+              Meal Mate is a mobile application designed to address the economic
+              crisis in Sri Lanka by minimizing food wastage and facilitating
+              the sharing of food. #kotlin #fierbase #Andorid Studio
+            </p>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="images/greencare.png" alt="greencare" />
+          <div class="projects-layer">
+            <h4>Green Care</h4>
+            <p>
+              Green care is a Agriculture and Farm health management system,
+              #MongoDB #React #Boostrap5 #NodeJs!
+            </p>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#" class="form-contact">
+        <div class="input-box">
+          <input type="text" id="fname" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Email Address" />
+          <input type="number" id="number" placeholder="Mobile Number" />
+          <input type="text" id="subject" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name="textarea"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          class="textarea"
+        ></textarea>
+        <input type="submit" id="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Purna Lakshitha | All Right Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bxs-arrow-to-top"></i></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swipeer js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- customer js -->
+    <script src="script.js"></script>
+  </body>
+</html>
