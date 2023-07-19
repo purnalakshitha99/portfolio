@@ -1028,3 +1028,49 @@ span {
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 380px) {
+  .home .home-content {
+    margin-top: 6rem;
+  }
+  .home .home-content h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 0.3;
+  }
+}
+
+@media (max-width: 335px) {
+  .home .home-content h1 {
+    margin-left: 3rem;
+  }
+  .home .profession-container .profession-box {
+    position: fixed;
+    top: 67%;
+    left: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+  .home .profession h3 {
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .home .profession-box .profession:nth-child(3) {
+    left: 7rem;
+    right: 16rem;
+    bottom: 24rem;
+    top: 50rem;
+  }
+
+  .home .profession-box .profession:nth-child(1) {
+    left: 7rem;
+    right: 4rem;
+    bottom: 39rem;
+  }
+
+  .home .profession-box .profession:nth-child(3) {
+    transform: rotate(90deg) translate(-174px, -433px);
+  }
+}
