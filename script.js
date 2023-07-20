@@ -46,22 +46,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Dark mode toggle
-  let darkModeIcon = document.querySelector("#darkMood-icon");
+  let darkModeIcon = document.querySelector("#darkMode-icon");
   console.log(darkModeIcon);
   darkModeIcon.onclick = () => {
-    console.log("hhhhhhhhhhhhhhhhhhhhhhhh");
-    darkModeIcon.classList.toggle("bx-sun");
+    console.log("Dark mode clicked");
+    if (darkModeIcon.classList.contains("bx-moon")) {
+      darkModeIcon.classList.remove("bx-moon");
+      darkModeIcon.classList.add("bx-sun");
+    } else {
+      darkModeIcon.classList.remove("bx-sun");
+      darkModeIcon.classList.add("bx-moon");
+    }
     document.body.classList.toggle("dark-mode");
   };
-
-  // let darkModeIcon = document.querySelector("#darkMood-icon");
-
-  // darkModeIcon.onclick = () => {
-  //   const currentClass = darkModeIcon.classList.contains("bx-moon")
-  //     ? "bx-sun"
-  //     : "bx-moon";
-  //   darkModeIcon.classList.toggle(currentClass);
-  // };
 
   // Swiper initialization
   var swiper = new Swiper(".mySwiper", {
